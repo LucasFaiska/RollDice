@@ -23,7 +23,9 @@
             android:background="#FFFFFF"
             android:stretchColumns="1"
             android:paddingTop="10dp"
-            android:paddingBottom="10dp">
+            android:paddingBottom="10dp"
+            android:accessibilityLiveRegion="polite"
+            android:gravity="center_horizontal">
 
             <TextView
                 android:layout_width="80dp"
@@ -40,9 +42,16 @@
                 android:gravity="center" />
 
             <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/header_actions"
+                android:gravity="center" />
+
+            <TextView
                 android:layout_width="80dp"
                 android:layout_height="wrap_content"
-                android:text="Total"
+                android:text="Parcial"
                 android:id="@+id/header_total"
                 android:gravity="center" />
         </TableRow>
@@ -50,7 +59,8 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:stretchColumns="1" >
+            android:stretchColumns="1"
+            android:gravity="center_horizontal">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -64,9 +74,17 @@
                 android:layout_height="wrap_content"
                 android:inputType="numberSigned"
                 android:ems="2"
-                android:text="0"
                 android:id="@+id/d2_quant"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:hint="0" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clean"
+                android:id="@+id/d2_clean_button"
+                android:onClick="clean" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -74,13 +92,15 @@
                 android:text="0"
                 android:id="@+id/d2_total"
                 android:gravity="center"/>
+
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:stretchColumns="1"
-            android:background="#FFFFFF">
+            android:background="#FFFFFF"
+            android:gravity="center_horizontal">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -94,9 +114,19 @@
                 android:layout_height="wrap_content"
                 android:inputType="numberSigned"
                 android:ems="2"
-                android:text="0"
                 android:id="@+id/d4_quant"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:hint="0" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clean"
+                android:id="@+id/d4_clean_button"
+                android:onClick="clean"
+                android:layout_column="2"/>
+
 
             <TextView
                 android:layout_width="wrap_content"
@@ -106,21 +136,234 @@
                 android:gravity="center"/>
         </TableRow>
 
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D6"
+                android:id="@+id/d6_label"
+                android:gravity="center"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned"
+                android:ems="2"
+                android:id="@+id/d6_quant"
+                android:gravity="center"
+                android:hint="0" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clean"
+                android:id="@+id/d6_clean_button"
+                android:onClick="clean"
+                android:layout_column="2"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/d6_total"
+                android:gravity="center"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1"
+            android:background="#FFFFFF"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D8"
+                android:id="@+id/d8_label"
+                android:gravity="center"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned"
+                android:ems="2"
+                android:id="@+id/d8_quant"
+                android:gravity="center"
+                android:hint="0" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clean"
+                android:id="@+id/d8_clean_button"
+                android:onClick="clean"
+                android:layout_column="2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/d8_total"
+                android:gravity="center"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D10"
+                android:id="@+id/d10_label"
+                android:gravity="center"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned"
+                android:ems="2"
+                android:id="@+id/d10_quant"
+                android:gravity="center"
+                android:hint="0" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clean"
+                android:id="@+id/d10_clean_button"
+                android:onClick="clean"
+                android:layout_column="2"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/d10_total"
+                android:gravity="center"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1"
+            android:background="#FFFFFF"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D12"
+                android:id="@+id/d12_label"
+                android:gravity="center"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned"
+                android:ems="2"
+                android:id="@+id/d12_quant"
+                android:gravity="center"
+                android:hint="0" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clean"
+                android:id="@+id/d12_clean_button"
+                android:onClick="clean"
+                android:layout_column="2"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/d12_total"
+                android:gravity="center"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D20"
+                android:id="@+id/d20_label"
+                android:gravity="center"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned"
+                android:ems="2"
+                android:id="@+id/d20_quant"
+                android:gravity="center"
+                android:hint="0" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clean"
+                android:id="@+id/d20_clean_button"
+                android:onClick="clean"
+                android:layout_column="2"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/d20_total"
+                android:gravity="center"/>
+        </TableRow>
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Roll"
             android:id="@+id/btn_roll" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="0"
-            android:gravity="center"
-            android:id="@+id/total"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total:"
+                android:id="@+id/textView" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="0"
+                android:gravity="center"
+                android:id="@+id/total"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" />
+        </TableRow>
 
     </TableLayout>
 
