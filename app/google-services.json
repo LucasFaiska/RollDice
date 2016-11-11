@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "312134095231",
+    "project_id": "dungeon-and-dragons-roll-dice"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:312134095231:android:74af1366cd5bf586",
+        "android_client_info": {
+          "package_name": "com.application.ilegra.rolldice"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyDcP4yr8nybN-QwfknGA05uiXj2ZMY-I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-87199838-1"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
