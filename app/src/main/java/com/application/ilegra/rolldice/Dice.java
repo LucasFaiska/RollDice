@@ -1,4 +1,4 @@
-package com.example.ilegra.rolldice;
+package com.application.ilegra.rolldice;
 
 import java.util.Random;
 
@@ -25,7 +25,9 @@ public class Dice {
 
         if(this.quantity > 0) {
             for(int i = 0; i < this.quantity; i++) {
-                total += r.nextInt(dice_weight) +1;
+                total += r.nextInt(dice_weight +1
+
+                );
             }
         }
 

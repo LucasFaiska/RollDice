@@ -1,4 +1,4 @@
-package com.example.ilegra.rolldice;
+package com.application.ilegra.rolldice;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.ilegra.rolldice", appContext.getPackageName());
+        assertEquals("com.application.ilegra.rolldice", appContext.getPackageName());
     }
 }

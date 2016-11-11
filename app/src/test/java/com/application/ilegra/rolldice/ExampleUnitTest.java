@@ -1,4 +1,4 @@
-package com.example.ilegra.rolldice;
+package com.application.ilegra.rolldice;
 
 import org.junit.Test;
 

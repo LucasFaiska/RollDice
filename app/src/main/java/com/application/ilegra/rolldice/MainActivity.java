@@ -1,4 +1,4 @@
-package com.example.ilegra.rolldice;
+package com.application.ilegra.rolldice;
 
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
@@ -9,13 +9,25 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.google.android.gms.analytics.Tracker;
 
 public class MainActivity extends AppCompatActivity {
+
+    /**
+     * The {@link Tracker} used to record screen views.
+     */
+    private Tracker mTracker;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // [START shared_tracker]
+        // Obtain the shared Tracker instance.
+        AnalyticsApplication application = (AnalyticsApplication) getApplication();
+        mTracker = application.getDefaultTracker();
+        // [END shared_tracker]
 
         final Button button = (Button) findViewById(R.id.btn_roll);
 
