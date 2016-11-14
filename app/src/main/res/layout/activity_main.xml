@@ -86,7 +86,7 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Clean"
+                    android:text="Clear"
                     android:id="@+id/d2_clean_button"
                     android:onClick="clean" />
 
@@ -126,7 +126,7 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Clean"
+                    android:text="Clear"
                     android:id="@+id/d4_clean_button"
                     android:onClick="clean"
                     android:layout_column="2"/>
@@ -166,7 +166,7 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Clean"
+                    android:text="Clear"
                     android:id="@+id/d6_clean_button"
                     android:onClick="clean"
                     android:layout_column="2"/>
@@ -207,7 +207,7 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Clean"
+                    android:text="Clear"
                     android:id="@+id/d8_clean_button"
                     android:onClick="clean"
                     android:layout_column="2"/>
@@ -246,7 +246,7 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Clean"
+                    android:text="Clear"
                     android:id="@+id/d10_clean_button"
                     android:onClick="clean"
                     android:layout_column="2"/>
@@ -287,7 +287,7 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Clean"
+                    android:text="Clear"
                     android:id="@+id/d12_clean_button"
                     android:onClick="clean"
                     android:layout_column="2"/>
@@ -327,7 +327,7 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Clean"
+                    android:text="Clear"
                     android:id="@+id/d20_clean_button"
                     android:onClick="clean"
                     android:layout_column="2"/>
