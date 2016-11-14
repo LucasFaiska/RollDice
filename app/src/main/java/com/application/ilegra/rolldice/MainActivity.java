@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.google.android.gms.analytics.HitBuilders;
 import com.google.android.gms.analytics.Tracker;
 
 public class MainActivity extends AppCompatActivity {
@@ -39,8 +40,12 @@ public class MainActivity extends AppCompatActivity {
                 InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
                 imm.hideSoftInputFromWindow(total.getWindowToken(),
                         InputMethodManager.RESULT_UNCHANGED_SHOWN);
+
             }
         });
+
+        mTracker.setScreenName("Home");
+        mTracker.send(new HitBuilders.ScreenViewBuilder().build());
     }
 
     public void clean( View v ) {
